@@ -1,3 +1,38 @@
 ul {
 
 }
+
+li {
+    -webkit-transition: -webkit-transform 2s;
+    transition: transform 2s;
+}
+li:hover {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+.overlay {
+    background-color: whitesmoke;
+    width: 0%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    transition: all 2s;
+}
+
+.closebtn {
+    position:absolute;
+    right:20px;
+    top:20px;
+    font-size: 5rem;
+    cursor: pointer;
+}
+.openbtn {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+    font-size: 2rem;
+}
