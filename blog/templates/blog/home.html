@@ -14,10 +14,20 @@
         <h2 class="text-center">Welcome to my blog</h2>
     </div> -->
 
-    <div class="row">
+     <div class="row">
     <div class="col-xs-1">
-    <img class="thumbnail" src="">
+    <div class="well">
+     <div class="overlay" id="main">
+        <span class="openbtn" onclick="finish_overlay()">menu</span>
+        <h1 class="closebtn" onclick="start_overlay()">&times;</h1>
+        <ul>
+            <h3><li><a href="#">Home</a></li></h3>
+            <h3><li><a href="#">Blog</a></li></h3>
+            <h3><li><a href="#">Contact us</a></li></h3>
+        </ul>
     </div>
+    </div>
+ </div>
         <div class="col-xs-8">
 {% for post in posts %}
             <div class="well">
@@ -43,11 +53,18 @@
     </div>
 
 </div>
-<img>
+<footer>
     <img class="img-responsive" src="large-e1421686702806.jpg"/>
 </footer>
 <script href="bootstrap-3.3.7-dist/js/bootstraop.js">
-
+function finish_overlay()
+{
+    document.getElementById("main").style.width="100%";
+}
+    function start_overlay()
+    {
+        document.getElementById("main").style.width="0%";
+    }
 </script>
 </body>
 </html>
