@@ -20,6 +20,7 @@ li:hover {
     overflow: hidden;
     position: fixed;
     transition: all 2s;
+    z-index: 1;
 }
 
 .closebtn {
@@ -28,6 +29,7 @@ li:hover {
     top:20px;
     font-size: 5rem;
     cursor: pointer;
+    z-index: 1000;
 }
 .openbtn {
     position: fixed;
