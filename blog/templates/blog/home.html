@@ -44,10 +44,12 @@
             <div class="well">
                 <a href=""><p class="text-center">Latest Article</p></a></br>
                 <ul>
-                   <a href=""><li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li></a></br>
-                    <a href=""><li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</li></a></br>
+                    {% for late in latestPost %}
+                   <a href=""><li>{{ late }}</li></a></br>
+                    {% endfor %}
+                    {% comment %}<a href=""><li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</li></a></br>
                     <a href=""><li> when an unknown printer took a galley of type and scrambled it to make a type specimen book.</li></a>
-                </ul>
+                {% endcomment %}</ul>
             </div>
         </div>
     </div>

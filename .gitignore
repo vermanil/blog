@@ -7,3 +7,5 @@ admin.pyc
 models.pyc
 urls.pyc
 views.pyc
+migrations
+__pycache__
